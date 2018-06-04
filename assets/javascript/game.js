@@ -19,22 +19,20 @@
 
    // Randomly chooses a choice from the options array. This is the Computer's guess.
    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-    
-   if (choices.indexOf(userGuess) === -1) {
 
-    if (userGuess === computerGuess) {
-       wins++;
-       guessesLeft = 10;
-       choices = [];
-    
-    
+   if (computerChoices.includes(userGuess)) {
 
-    } else if (userGuess ==! computerChoices) {
-    alert("Oops, have to choose a letter.");
+    
+    if (choices.indexOf(userGuess) === -1) {
 
-    } else if (guessesLeft > 0) {
+     if (userGuess === computerGuess) {
+         wins++;
+         guessesLeft = 10;
+         choices = [];
+
+    } else if (guessesLeft > 1) {
        guessesLeft--;
-       var x = choices.push(userGuess);
+       choices.push(userGuess);
 
     } else {
         losses++;
@@ -42,6 +40,8 @@
         choices = [];
     }
 }
+
+   }
 
     
 
