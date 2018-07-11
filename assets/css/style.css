@@ -1,11 +1,15 @@
 body {
     text-align: center;
+    color: aliceblue;
+    background: url("../images/background.jpg"), black;
+    background-repeat: no-repeat;
+    background-position: right top;
 }
 
 h1 {
     font-weight: bold;
     font-family: 'Permanent Marker', cursive;
-    font-size: 42px;
+    font-size: 62px;
     text-align: center;
     padding-top: 25px;
 }
@@ -15,7 +19,7 @@ p, #game {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     line-height: 8px;
-    font-size: 16px;
+    font-size: 27px;
     text-align: center;
     padding: 5px;
 }
